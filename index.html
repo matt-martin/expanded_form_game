@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="numberDisplay"></div>
+        <div id="expandedFormArea"></div>
+        <p id="congratsMessage" style="display:none; color: green;">
+            Congratulations! You've expanded all the numbers!
+        </p>
+        <button id="generateNumber">Generate New Number</button>
+    </div>
+
+    <!-- Add this HTML for the modal overlay -->
+    <div id="guessModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>What will the number become in expanded form? Enter your guess:</p>
+            <p id="guessFeedback" style="display:none; color: red;"></p> <!-- Feedback paragraph -->
+            <input type="number" id="userGuess">
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

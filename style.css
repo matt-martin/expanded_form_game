@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#gameContainer {
+    width: min-content; /* Or min-content is another option */
+    margin: auto; /* Center the container */
+    min-width: 600px; 
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#numberDisplay, #expandedFormArea {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#numberDisplay {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#expandedFormArea {
+    min-height: 50px;
+    background-color: #f0f0f0;
+}
+
+/* style.css */
+#dragElement {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.drag-item {
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.expanded-item {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.highlighted {
+    background-color: yellow; /* Choose a color that stands out */
+    border-radius: 3px; /* Optional, for rounded corners */
+}
+
+#guessFeedback {
+    color: red; /* or any other style you prefer */
+    margin-top: 10px;
+}
+
+.digit {
+    user-select: none; /* This prevents text selection */
+}
+
