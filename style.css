@@ -5,9 +5,8 @@ body {
 }
 
 #gameContainer {
-    width: min-content; /* Or min-content is another option */
+    width: max-content; /* Or min-content is another option that doesn't work so well */
     margin: auto; /* Center the container */
-    min-width: 600px; 
     padding: 20px;
     border: 2px solid #000;
     border-radius: 10px;
@@ -67,7 +66,7 @@ body {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: max-content;
 }
 
 .close {

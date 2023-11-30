@@ -143,9 +143,3 @@ document.addEventListener('DOMContentLoaded', () => {
     generateRandomNumber();
 });
 
-window.addEventListener('resize', function() {
-    const minWidth = 600; // The minimum width you want to allow, should match CSS
-    if (window.innerWidth < minWidth) {
-        window.resizeTo(minWidth, window.innerHeight);
-    }
-});
